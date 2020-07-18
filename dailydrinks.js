@@ -1,10 +1,9 @@
 var listTo = document.querySelector('.listTo');
 var sendData = document.querySelector('.btn-addNew');
 var data = JSON.parse(localStorage.getItem('listData')) || [];
-var control = true;
 
 sendData.addEventListener('click', addlistTo);
-listTo.addEventListener('click', listDone);
+listTo.addEventListener('click', listDelete);
 listTo.addEventListener('click', listEdit);
 updateList(data);
 
@@ -34,7 +33,7 @@ function updateList(items) {
   listTo.innerHTML = str;
 };
 
-function listDone(e) {
+function listDelete(e) {
   e.preventDefault();
   if(e.target.className !== 'fas fa-trash-alt'){return};
 

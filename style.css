@@ -40,8 +40,8 @@ body {
   box-shadow: none;
 }
 .btn-addNew:hover { background: #009688;}
-.addList input {height: 50px;border-radius: 25px;}
-.addList input:focus{
+.drinkList input {height: 50px;border-radius: 25px;}
+.drinkList input:focus{
   outline: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
